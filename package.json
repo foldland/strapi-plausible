@@ -76,15 +76,15 @@
   "devDependencies": {
     "@biomejs/biome": "2.5.7",
     "@foldland/biome-configs": "1.4.3",
-    "@strapi/sdk-plugin": "^6.1.1",
-    "@strapi/strapi": "^5.51.2",
-    "@strapi/typescript-utils": "^5.51.2",
+    "@strapi/sdk-plugin": "6.1.1",
+    "@strapi/strapi": "5.51.2",
+    "@strapi/typescript-utils": "5.51.2",
     "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "react-router-dom": "^6.30.4",
-    "typescript": "^5.9.3"
+    "typescript": "5.9.3"
   },
   "devEngines": {
     "runtime": {
