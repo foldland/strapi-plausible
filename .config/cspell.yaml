@@ -7,6 +7,7 @@ enableGlobDot: false
 ignorePaths:
   - "**/pnpm-lock.yaml"
   - "admin/src/translations/!(en.json)"
+  - CHANGELOG.md
 dictionaries:
   # cspell - https://github.com/streetsidesoftware/cspell-dicts
   - "bash"
