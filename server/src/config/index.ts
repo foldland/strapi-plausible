@@ -1,19 +1,18 @@
-import z from 'zod';
+import { type PluginConfig, pluginConfigSchema } from './schema'
 
 export default {
-    default: ({ env }) => ({
-        plausibleInstance: 'https://plausible.io',
-        domains: []
-    }),
-    validator: (config) => {
-        const schema = z.object({
-            plausibleInstance: z.string(),
-            domains: z.array(z.object({
-                name: z.string().min(1, 'Domain name is required').regex(/^(?!\-)(?:[a-zA-Z0-9\-]{1,63}(?<!\-)\.)+[a-zA-Z]{2,63}$/, 'Invalid domain name format, example: example.com'),
-                auth: z.string().min(1, 'Auth token is required'),
-            })),
-        });
-
-        return schema.parse(config);
-    },
-};
+  default: ({ env }): PluginConfig => {
+    return {
+      plausibleInstance: env('PLAUSIBLE_URL'),
+      domains: [
+        {
+          name: env('PLAUSIBLE_SITE_NAME'),
+          auth: env('PLAUSIBLE_TOKEN'),
+        },
+      ],
+    }
+  },
+  validator: (config) => {
+    pluginConfigSchema.parse(config)
+  },
+}

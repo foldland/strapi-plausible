@@ -7,4 +7,4 @@ export default [
       auth: false, // or true if it needs auth
     },
   },
-];
+]

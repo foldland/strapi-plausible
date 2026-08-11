@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": ["@foldland/biome-configs/base"],
+  "overrides": [
+    {
+      "includes": ["**/*.tsx"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noMagicNumbers": "off" // Not useful
+          },
+          "complexity": {
+            "noExcessiveLinesPerFunction": "off" // React components are functions ;)
+          },
+          "correctness": {
+            "noNodejsModules": "off"
+          }
+        }
+      }
+    }
+  ]
+}
