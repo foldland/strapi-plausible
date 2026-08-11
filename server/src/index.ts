@@ -8,14 +8,14 @@
 /**
  * Plugin server methods
  */
-import config from './config';
-import configController from './controllers/config';
-import routes from './routes';
+import config from './config'
+import configController from './controllers/config'
+import routes from './routes'
 
 export default {
-  config,
+  config: config,
   controllers: {
-    config: configController
+    config: configController,
   },
-  routes
-};
+  routes: routes,
+}

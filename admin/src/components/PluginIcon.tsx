@@ -1,5 +1,7 @@
-import { ChartPie } from '@strapi/icons';
+import { ChartPie } from '@strapi/icons'
 
-const PluginIcon = () => <ChartPie width={20} height={20} />;
+const PluginIcon = () => {
+  return <ChartPie height={20} width={20} />
+}
 
-export { PluginIcon };
+export { PluginIcon }

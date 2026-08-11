@@ -1,8 +1,8 @@
-import configRoutes from "./config"
+import configRoutes from './config'
 
 export default {
-    config: {
-        type: 'admin',
-        routes: configRoutes
-    }
+  config: {
+    type: 'admin',
+    routes: configRoutes,
+  },
 }

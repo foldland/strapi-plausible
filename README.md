@@ -73,6 +73,8 @@ to allow `plausible.io` or your self-hosted instance (e.g. `analytics.example.co
 
 ## 📝 License
 
-[MIT License](LICENSE.md) 
+[MIT License](LICENSE) 
 
-Made in 🇳🇱 by [@douwepausma](https://douwepausma.nl) inspired by [Devtastic](https://github.com/its-devtastic).
+Forked from:
+  - [@douwepausma](https://douwepausma.nl)
+  - [Devtastic](https://github.com/its-devtastic).

@@ -1,15 +1,15 @@
-import { Page } from '@strapi/strapi/admin';
-import { Routes, Route } from 'react-router-dom';
+import { Page } from '@strapi/strapi/admin'
+import { Route, Routes } from 'react-router-dom'
 
-import { HomePage } from './HomePage';
+import { HomePage } from './HomePage'
 
 const App = () => {
   return (
     <Routes>
-      <Route index element={<HomePage />} />
-      <Route path="*" element={<Page.Error />} />
+      <Route element={<HomePage />} index={true} />
+      <Route element={<Page.Error />} path="*" />
     </Routes>
-  );
-};
+  )
+}
 
-export { App };
+export default App
