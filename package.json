@@ -74,11 +74,11 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.7",
-    "@foldland/biome-configs": "1.4.3",
+    "@biomejs/biome": "2.5.8",
+    "@foldland/biome-configs": "1.5.0",
     "@strapi/sdk-plugin": "6.1.1",
-    "@strapi/strapi": "5.51.2",
-    "@strapi/typescript-utils": "5.51.2",
+    "@strapi/strapi": "5.52.0",
+    "@strapi/typescript-utils": "5.52.0",
     "@types/react": "18.3.31",
     "@types/react-dom": "18.3.7",
     "react": "18.3.1",
@@ -94,7 +94,7 @@
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "11.20.0",
+      "version": "11.21.0",
       "onFail": "download"
     }
   }
