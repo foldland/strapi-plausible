@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 ---
+## [2.0.4](https://gitlab.fold.land/tools/strapi-plausible/compare/v2.0.3..v2.0.4) - 2026-08-26
+
+### 👷 Continuous Integration
+
+- update renovate config - ([d88802e](https://gitlab.fold.land/tools/strapi-plausible/commit/d88802e41200af00d75c56f8e6c7e21613220de4)) - @Nikolas Rimikis
+
+### 🔧 Chores
+
+- **(deps)** update all non-major dependencies - ([b16f168](https://gitlab.fold.land/tools/strapi-plausible/commit/b16f16819e21b288f1fac7dfb205b502108636c6)) - @renovate
+- **(deps)** lock file maintenance - ([baeb70f](https://gitlab.fold.land/tools/strapi-plausible/commit/baeb70fa1775833bf79af3a342dc2e3f7dc0ceef)) - @renovate
+- **(deps)** update all non-major dependencies - ([7db3643](https://gitlab.fold.land/tools/strapi-plausible/commit/7db3643e65e4ee848e1cd83575f450948d1b21e2)) - @renovate
+- **(deps)** lock file maintenance - ([d814659](https://gitlab.fold.land/tools/strapi-plausible/commit/d8146598f0575e2dd6303e0c3a223d2957137447)) - @renovate
+- **(deps)** pin dependency react-router-dom to 6.30.6 - ([bd1e41f](https://gitlab.fold.land/tools/strapi-plausible/commit/bd1e41f02c98b654ae9471397cfb57c576f35892)) - @renovate
+
+
+
+
+#### Statistics
+- 6 commit(s) contributed to the release.
+- 11 day(s) passed between the first and last commit.
+- 6 commit(s) parsed as conventional.
+- 0 linked issue(s) detected in commits.
+- 15 day(s) passed between releases.
+---
 ## [2.0.3](https://gitlab.fold.land/tools/strapi-plausible/compare/v2.0.2..v2.0.3) - 2026-08-11
 
 ### 🔨 Refactoring
@@ -12,7 +36,8 @@ All notable changes to this project will be documented in this file. See [conven
 #### New Contributors ❤️
 
 
-* @Nikolas Rimikis made their first contribution  in !11
+* @Nikolas Rimikis made their first contribution  in !12
+* @Release Magician 🪄 made their first contribution 
 * @renovate made their first contribution 
 * @Renovate Bot made their first contribution  in !7
 * @nikolas.rimikis made their first contribution 
