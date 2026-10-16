@@ -1,4 +1,4 @@
-import configRoutes from './config'
+import configRoutes from './config.ts'
 
 export default {
   config: {

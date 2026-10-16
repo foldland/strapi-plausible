@@ -1,4 +1,4 @@
-import { type PluginConfig, pluginConfigSchema } from './schema'
+import { type PluginConfig, pluginConfigSchema } from './schema.ts'
 
 export default {
   default: ({ env }): PluginConfig => {

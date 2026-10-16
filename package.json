@@ -1,7 +1,13 @@
 {
   "name": "@foldland/strapi-plausible",
-  "description": "Show Plausible analytics within Strapi.",
   "version": "2.0.4",
+  "description": "Show Plausible analytics within Strapi.",
+  "keywords": [
+    "strapi",
+    "plausible",
+    "analytics",
+    "plugin"
+  ],
   "license": "MIT",
   "author": {
     "name": "foldland Software GmbH",
@@ -9,21 +15,6 @@
     "url": "https://fold.land"
   },
   "type": "commonjs",
-  "keywords": [
-    "strapi",
-    "plausible",
-    "analytics",
-    "plugin"
-  ],
-  "files": [
-    "dist"
-  ],
-  "strapi": {
-    "kind": "plugin",
-    "name": "plausible",
-    "displayName": "Plausible",
-    "description": "Show Plausible analytics within Strapi."
-  },
   "exports": {
     "./package.json": "./package.json",
     "./strapi-admin": {
@@ -41,18 +32,38 @@
       "default": "./dist/server/index.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "strapi-plugin build",
     "check": "pnpm format:check && pnpm lint:check && pnpm typecheck && pnpm verify",
     "dev": "strapi-plugin watch",
-    "format:check": "biome check --formatter-enabled=true --linter-enabled=false --assist-enabled=false ",
+    "format:check": "biome check --formatter-enabled=true --linter-enabled=false --assist-enabled=false",
     "format:write": "biome format --write",
     "link": "strapi-plugin watch:link",
     "lint:check": "biome check --formatter-enabled=false --linter-enabled=true --assist-enabled=true",
     "lint:write": "biome lint --write",
     "test": "echo \"No tests setup\"",
-    "verify": "strapi-plugin verify",
-    "typecheck": "tsc --noEmit -p server/tsconfig.json && tsc --noEmit -p admin/tsconfig.json"
+    "typecheck": "tsc --noEmit -p server/tsconfig.json && tsc --noEmit -p admin/tsconfig.json",
+    "verify": "strapi-plugin verify"
+  },
+  "dependencies": {
+    "react-intl": "^7.1.14",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@foldland/biome-configs": "1.6.0",
+    "@strapi/sdk-plugin": "6.1.1",
+    "@strapi/strapi": "5.58.0",
+    "@strapi/typescript-utils": "5.58.0",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.30.6",
+    "typescript": "5.9.3"
   },
   "peerDependencies": {
     "@strapi/design-system": "^2.0.0-rc.29",
@@ -69,33 +80,22 @@
       "optional": true
     }
   },
-  "dependencies": {
-    "react-intl": "^7.0.0",
-    "zod": "^4.0.0"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.5.14",
-    "@foldland/biome-configs": "1.5.1",
-    "@strapi/sdk-plugin": "6.1.1",
-    "@strapi/strapi": "5.56.0",
-    "@strapi/typescript-utils": "5.56.0",
-    "@types/react": "18.3.31",
-    "@types/react-dom": "18.3.7",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-router-dom": "6.30.6",
-    "typescript": "5.9.3"
-  },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "24.21.0",
+      "version": "24.22.0",
       "onFail": "download"
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "12.10.0",
+      "version": "12.11.2",
       "onFail": "download"
     }
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "plausible",
+    "displayName": "Plausible",
+    "description": "Show Plausible analytics within Strapi."
   }
 }

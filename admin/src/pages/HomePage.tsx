@@ -11,12 +11,12 @@ import { useCallback, useEffect, useState } from 'react'
 import { useIntl } from 'react-intl'
 
 interface Domain {
-  name: string
   auth: string
+  name: string
 }
 interface Config {
-  plausibleInstance: string
   domains: Array<Domain>
+  plausibleInstance: string
 }
 
 const HomePage = () => {
