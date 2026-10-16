@@ -8,9 +8,9 @@
 /**
  * Plugin server methods
  */
-import config from './config'
-import configController from './controllers/config'
-import routes from './routes'
+import config from './config/index.ts'
+import configController from './controllers/config.ts'
+import routes from './routes/index.ts'
 
 export default {
   config: config,

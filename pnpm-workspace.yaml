@@ -3,6 +3,9 @@ minimumReleaseAge: 4320 # 3 days - same as renovate
 minimumReleaseAgeExclude:
   - "@foldland/*"
   - "@strapi/*"
+  # security maintenance
+  - "@vue/compiler-core@3.5.44"
+  - "@vue/shared@3.5.44"
 
 registries:
   default: https://registry.npmjs.org/
@@ -39,15 +42,5 @@ peerDependencyRules:
     codemirror: 5.65.21
 
 overrides:
-  axios@>=1.13.0 <1.20.0: ^1.20.0
-  brace-expansion@<1.1.20: ^1.1.20
-  brace-expansion@>=2.0.0 <2.1.6: ^2.1.6
-  brace-expansion@>=4.0.0 <5.0.11: ^5.0.11
-  fast-uri@>=3.0.0 <3.1.7: ^3.1.7
-  handlebars@>=4.0.0 <=4.7.9: ^4.7.10
   nodemailer@<=10.0.5: ^10.0.6
-  sharp@<0.35.5: ^0.35.5
-  shell-quote@>=1.8.4 <1.11.0: ^1.11.0
-  source-map-js@>=1.0.0 <1.2.2: ^1.2.2
-  vite@<=6.4.2: ^6.4.3
   webpack-dev-middleware@<7.4.5: ^7.4.5

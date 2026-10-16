@@ -1,7 +1,7 @@
 import type { StrapiApp } from '@strapi/strapi/admin'
-import { Initializer } from './components/Initializer'
-import { PluginIcon } from './components/PluginIcon'
-import { PLUGIN_ID } from './pluginId'
+import { Initializer } from './components/Initializer.tsx'
+import { PluginIcon } from './components/PluginIcon.tsx'
+import { PLUGIN_ID } from './pluginId.ts'
 
 const plugin: StrapiApp['appPlugins'][string] = {
   register: (app) => {
@@ -13,7 +13,7 @@ const plugin: StrapiApp['appPlugins'][string] = {
         defaultMessage: 'Analytics',
       },
       Component: () => {
-        return import('./pages/App')
+        return import('./pages/App.tsx')
       },
       permissions: [],
     })
