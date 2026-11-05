@@ -4,18 +4,17 @@ minimumReleaseAgeExclude:
   - "@foldland/*"
   - "@strapi/*"
   # security maintenance
-  - "@vue/compiler-core@3.5.44"
-  - "@vue/shared@3.5.44"
 
 registries:
   default: https://registry.npmjs.org/
-  "@foldland": https://npm.registry.foldland.io/
+  "@foldland": https://npm.registry.foldland.io
 
 # Dependency resolution
 savePrefix: "^"
 resolutionMode: "highest"
 strictPeerDependencies: true
 preferFrozenLockfile: true
+sharedWorkspaceLockfile: false
 autoDedupe: true
 dedupePeers: true
 
@@ -24,12 +23,18 @@ engineStrict: true
 ignorePnpmfile: true
 
 # Security
+lockfile:
+  includeResolutionSettings: true
+audit:
+  level: high
 blockExoticSubdeps: true
 hoist: false
 hoistWorkspacePackages: false
 verifyDepsBeforeRun: "install"
 
 allowBuilds:
+  '@apollo/protobufjs': false
+  "@parcel/watcher": false
   "@swc/core": false
   core-js-pure: false
   esbuild: false
@@ -40,7 +45,7 @@ allowBuilds:
 peerDependencyRules:
   allowedVersions:
     codemirror: 5.65.21
+    webpack: 5.109.2
 
 overrides:
-  nodemailer@<=10.0.5: ^10.0.6
   webpack-dev-middleware@<7.4.5: ^7.4.5
